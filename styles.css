@@ -1,0 +1,107 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background: #282c34; /* Subtle dark gradient background */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #3a3f47; /* Slightly lighter card background */
+    padding: 40px;
+    border-radius: 12px; /* Smooth edges */
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #61dafb; /* Bright blue accent */
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #61dafb; /* Underline with accent */
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #abb2bf; /* Muted label text */
+}
+
+input, select, button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #444b52; /* Input background */
+    color: #ffffff;
+    font-size: 16px;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    background-color: #5c6370; /* Highlight on focus */
+    border: 2px solid #61dafb;
+}
+
+button {
+    background: #61dafb;
+    color: #282c34;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+    background: #50bfe6; /* Slightly darker blue */
+    transform: scale(1.05);
+}
+
+button:active {
+    background: #3a99c5; /* Active button color */
+    transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
